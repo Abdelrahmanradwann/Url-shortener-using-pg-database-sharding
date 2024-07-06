@@ -1,0 +1,21 @@
+{
+  "name": "sharding",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "config": "^3.3.12",
+    "consistent-hash": "^1.2.2",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "hashring": "^3.2.0",
+    "pg": "^8.12.0"
+  }
+}
