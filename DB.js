@@ -62,6 +62,17 @@ class Url{
            throw err;
        }   
     }
+    static async get(server,urlId) {
+        try {
+            const result = await client[server].query("SELECT URL FROM URL_TABLE WHERE URL_ID = $1", [urlId]);
+            if (result.rowCount < 0) {
+                throw new Error('Url not found');
+            }
+            return result.rows;
+        } catch (err) {
+            throw err;
+        }
+    }
 
 }
 module.exports = {
